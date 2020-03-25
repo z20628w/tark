@@ -1,0 +1,102 @@
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+/* 引入字体 */
+	@font-face{
+	    font-family:'繁体';
+	    src:url('../字体/hanyi73/st.ttf') format('truetype');
+	}
+/* ------------------固定导航栏------------------ */
+nav{width: 100%;height: 110px;background:white;position: fixed;top: 0;left: 0;z-index: 9999;box-shadow: 0 0 10px 1px #ccc;}
+
+/* -------------导航栏左边logo------------- */
+nav>.lg{width: 30%;height: 100%;background:white;float: left;margin-left: 30px;}
+nav>.lg>img{width: 180px;height: 75px;margin: 17.5px 0;display: block;float: left;cursor: pointer;}
+/* -------------导航栏左边股价------------- */
+nav>.lg>.SharePrice{width:190px;height: 55px;margin: 27.5px 0 0px 15px;padding: 0px 0 0 15px;float:left;border-left: 1px solid rgba(0,0,0,.1);}
+.SharePriceNew{font-size: 14px;color: #666;font-weight: 700;}
+.SharePrice>span{display: block;height: 40px;color:#fe0000;font-size: 18px;line-height: 18px;margin-top: 5px;}
+.SharePrice>span>img{margin: 7px 0 0 4px;}
+.SharePrice>span>div{display: inline-block;font-size: 14px;margin-left: 5px;font-weight: 900;}
+
+/* -------------导航栏右边导航部分------------- */
+nav>.Navigation{width: 50%;height: 100%;float:right;margin-right: 30px;}
+/* -------------导航栏右边导航部分内的文字内容------------- */
+nav>.Navigation>ul{width: 80%;height: 100%;float: left;}
+nav>.Navigation>ul>li{width:64px;height: 100%;background:white;float: left;margin: 0 1.8%;position: relative;cursor: pointer;}
+nav>.Navigation>ul>li>a{width:64px;height: 100%;line-height: 110px;text-align: center;color: #000;display: block;font-size: 14px;position: relative;z-index: 10;}
+/* -------------导航栏右边导航部分内的内容的背景葫芦------------- */
+nav>.Navigation>ul>li>i{width: 100%;height: 100%;display: block;position: absolute;top: 0;left: 0;background: url(../img/hover1.png) no-repeat center/50% 60%;opacity: .5;transform: scale(1);transition: all .5s ease;}
+/* -------------导航栏右边导航部分内的内容的背景花------------- */
+nav>.Navigation>ul>li>span{display: block;width: 100%;height: 100%;position: absolute;top: 0;left: 0;transform: scale(0);transition: all .5s ease;}
+
+nav>.Navigation>ul>li>span.Flowers{transform: scale(1);}
+nav>.Navigation>ul>li>i.Gourd{transform: scale(1.5)}
+nav>.Navigation>ul>li>a.gren{color: #57c282;}
+
+/* -------------导航栏右边导航部分内的内容的背景上下花瓣------------- */
+nav>.Navigation>ul>li>span>b{display: block;width: 100%;height: 50%;background: url(../img/hover2t.png) no-repeat 5px 10px}
+nav>.Navigation>ul>li>span>e{display: block;width: 100%;height: 50%;background: url(../img/hover2b.png) no-repeat 5px 16px}
+
+/* -------------导航栏右边导航部分内的非文字内容------------- */
+nav>.Navigation>div{width: 20%;height: 100%;background:white;float: right;}
+/* -------------搜索------------- */
+nav>.Navigation>div>.Search{width: 30px;height: 71px;float: left;margin-top: 40px;background:url(../img/Search.png) no-repeat center 10px/60%;cursor: pointer;position: relative;}
+/* -------------搜索框------------- */
+nav>.Navigation>div>.Search>div{width: 195px;height: 0px;background: rgba(0,0,0,0);position: absolute;top:70px;right: 0px;padding: 10px;overflow: hidden;transition: all 1s ease;}
+nav>.Navigation>div>.Search>div>.text{display: block;width: 150px;height: 30px;padding: 0 5px;float: left;border-radius: 5px;margin-top: 10px;border: 0;outline: 0;}
+nav>.Navigation>div>.Search>div>span{display: block;float: right;background: #57C282;margin-left: 5px;width: 30px;height: 30px;margin-top: 10px;border-radius: 5px;}
+nav>.Navigation>div>.Search>div>span>img{display: block;width: 70%;height: 70%;margin: 15% auto;}
+ /* -------------鼠标移入出现搜索框------------- */
+/*nav>.Navigation>div>.Search:hover>div{display: block;} */
+
+/* -------------一根竖线------------- */
+nav>.Navigation>div>.VerticalLine{width: 1px;height: 18px;background: #ccc;margin-top:46px;float: left;margin-left: 10px;cursor: pointer;}
+
+/* -------------文字转换------------- */
+nav>.Navigation>div>.Fonts{width: 50px;height: 62px;float: left;margin-top: 48px;margin-right: 14px;font-size: 14px;text-align: right;cursor: pointer;position: relative;}
+.Jane{color: #57c282;}
+/* -------------文字转换的字体内容------------- */
+nav>.Navigation>div>.Fonts>div{width: 156px;height: 0px;background: rgba(0,0,0,.5);position: absolute;top:64px;right:-70px;padding: 0 39px;overflow: hidden;transition: all .8s ease;}
+nav>.Navigation>div>.Fonts>div>span{width: 76px;height: 100%;display: block;float: left;color: white;font-size: 14px;text-align: center;line-height: 60px;}
+
+nav>.Navigation>div>.Fonts>span.jianti{font-family: '微软雅黑';}
+nav>.Navigation>div>.Fonts>span.fanti{font-family: '繁体';}
+/* -------------文字转换的字体颜色转换------------- */
+nav>.Navigation>div>.Fonts>div>span:hover{color:#57C282;}
+/* -------------鼠标移入显示字体转换------------- */
+/* nav>.Navigation>div>.Fonts:hover>div{display: block;} */
+/* -------------导航按钮------------- */
+nav>.Navigation>div>.guide{width: 44px;height: 44px;border: 1px solid #ccc;box-shadow: 0 0 5px 1px #ccc;float: right;margin-top: 32px;cursor: pointer;background:url(../img/guide.png) no-repeat center;}
+/* -------------导航按钮内的内容(左边透明黑)------------- */
+nav>.Navigation>div>.guide>div.guideContent{width:100%;height: 731px;background:rgba(0,0,0,.2);position:fixed;top: 0;left: 0;transition: all .5s ease;display: none;}
+/* -------------导航按钮内的内容------------- */
+nav>.Navigation>div>.guide>div.guideWrap{width:420px;height:731px;position:absolute;top: 0;right:-433px;background:white;transition:all .5s ease;z-index: 11;}
+/* -------------导航按钮内的头部内容------------- */
+div.guideWrap>div.guideWraptop{width: 100%;height: 110px;background: green;}
+div.guideWrap>div.guideWraptop>div{width: 50%;height: 100%;float: left;padding: 0 0 0 40px;}
+div.guideWrap>div.guideWraptop>div>a{display: block;width: 100%;height: 100%;color: white;font-weight: 900;line-height: 110px;}
+div.guideWrap>div.guideWraptop>span{display: block;float: right;width: 46px;height: 46px;background: url(../img/gb.png) no-repeat center;margin: 32px 40px;}
+/* -------------导航按钮内的下部分内容------------- */
+div.guideWrap>div.guideWrapmiddle{width: 100%;height:621px;overflow:auto;}
+div.guideWrap>div.guideWrapmiddle>ul{width:320px;height:535px;padding: 0 40px;background:white;overflow: hidden;}
+div.guideWrap>div.guideWrapmiddle>ul>li{width: 100%;border-bottom: 2px solid #f4f4f4;padding-bottom: 10px;margin: 4px 0;}
+div.guideWrap>div.guideWrapmiddle>ul>li>a{width: 100%;height: 30px;line-height: 30px;color:#333;display: block;}
+div.guideWrap>div.guideWrapmiddle>ul>li>span{display: block;width: 100%;}
+div.guideWrap>div.guideWrapmiddle>ul>li>span>a{color: #999;font-size: 14px;padding-right: 10px;height: 25.6px;line-height: 25.6px;}
+div.guideWrap>div.guideWrapmiddle>ul>li>span>a:hover{color: #2d7045;}
+
+div.guideWrapmiddle>div.gupiao{width: 320px;height: 74px;padding: 0 40px;overflow: hidden;}
+div.guideWrapmiddle>div.gupiao>p{width: 26%;height: 30px;color: #FE0000;font-size: 23px;display: block;}
+div.guideWrapmiddle>div.gupiao>p>i{display: block;float:right;background: url(../img/down.png) no-repeat center;width: 20px;height: 20px;margin-top: 5px;}
+div.guideWrapmiddle>div.gupiao>span{color: #5f5f5f;font-size: 14px;display: block;font-weight: 900;}
+div.guideWrapmiddle>div.gupiao>h6{color: #a3a3a3;font-size: 14px;}
+div.guideWrapmiddle>b{display: block;height: 20px;width: 100%;}
+div.guideWrapmiddle>div.Contact{width: 230px;height: 116px;margin: 0 auto;}
+div.guideWrapmiddle>div.Contact>span{display: block;width:95px;height: 116px;margin: 0 10px;float: left;}
+div.guideWrapmiddle>div.Contact>span>p{display: block;width: 95px;height: 95px;background: white;}
+div.guideWrapmiddle>div.Contact>span>p>img{display: block;width: 85px;height: 85px;margin: 5px;}
+div.guideWrapmiddle>div.Contact>span>h4{width: 100%;height: 21px;font-size: 12px;color: #666;text-align: center;margin-top: 5px;}
+/* ------------------填充顶部空白------------------ */
+.TopBlank{width: 100%;height: 110px;}

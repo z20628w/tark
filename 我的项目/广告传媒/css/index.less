@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    overflow: hidden;
+}
+div.box{
+    width: 100%;
+    height:auto;
+    background: #f7f7f7;
+    position: relative;
+    
+    // 导航栏
+    &>div.nav{
+        width: 100%;
+        height: 100px;
+        padding: 0 40px;
+        box-sizing: border-box;
+        position:fixed;
+        left: 0px;
+        top: 0px;
+        background: #f7f7f7;
+        &>div.nav-cont{
+            width: 100%;
+            height: 100%;
+            padding: 10px 0;
+            box-sizing: border-box;
+            // logo
+            &>div.logo{
+                float: left;
+                width: 160px;
+                height: 50px;
+                padding: 15px 0;
+                &>img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            // 菜单按钮
+            &>div.menu{
+                float: right;
+                width: 50px;
+                height: 50px;
+                background: rgba(0,0,0,.8);
+                margin: 15px 0;
+                position: relative;
+                z-index: 1;
+                // 两条横线
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    height: 2px;
+                    background: rgba(255,255,255,.5);
+                    margin: 18px auto 0 auto;
+                    transition: all .3s ease;
+                    transform-origin: right bottom;
+                }
+                &::after{
+                    content: '';
+                    width: 20px;
+                    height: 2px;
+                    display: block;
+                    background: rgba(255,255,255,.5);
+                    margin: 10px auto 0 auto;
+                    transition: all .3s ease;
+                    transform-origin: right top;
+                }
+                &:hover:before{
+                    background: rgba(255,255,255,1);
+                    transform: rotate(-35deg);
+                }
+                &:hover:after{
+                    background: rgba(255,255,255,1);
+                    transform: rotate(35deg);
+                }
+                &.click{
+                    &:before{
+                        background: rgba(255,255,255,1);
+                        transform: rotate(-35deg);
+                    }
+                    &:after{
+                        background: rgba(255,255,255,1);
+                        transform: rotate(35deg);
+                    }
+                }
+            }
+            // 菜单
+            &>div.menus{
+                position: fixed;
+                right:-400px;
+                top: 0px;
+                width: 400px;
+                height: 100%;
+                background: white;
+                &>ul{
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    padding-top: 100px;
+                    &>li{
+                        width: 100%;
+                        height: 50px;
+                        padding: 0 50px 0 40px;
+                        border-bottom: 1px solid rgba(0,0,0,.1);
+                        &>a{
+                            display: inline-block;
+                            height: 100%;
+                            line-height: 50px;
+                            color: rgba(0,0,0,.7);
+                            font-weight: 900;
+                            cursor: pointer;
+                        }
+                        &:hover{
+                            background:rgba(0,0,0,.1) ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 左边小圆点
+    &>div.Track{
+        width: 20px;
+        height: auto;
+        position: fixed;
+        left: 20px;
+        top: 50%;
+        margin-top:-82px;
+        overflow: hidden;
+        &>ul{
+            padding: 0 5px;
+            height: auto;
+            &>li{
+                display:block;
+                float: left;
+                width: 4px;
+                height: 4px;
+                background: rgba(0,0,0,.3);
+                margin: 15px auto;
+                border: 1px solid white;
+                transition: all .2s ease;
+                cursor: pointer;
+                &:hover{
+                    background: white;
+                    border: 1px solid black;
+                    border-radius: 50%;
+                }
+            }
+            &>li.style{
+                background: white;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+        }
+    }
+    // 网页内容
+    &>div.content{
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        overflow: hidden;
+        z-index: -1;
+        &>div.Outer{
+            width: 100%;
+        &>div.Publics{
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding-top: 100px;
+            &>div.cont{
+                width: 50%;
+                height: 100%;
+                box-sizing:border-box;
+                padding: 0 20px;
+            }
+            &>div.lefts{
+                float: left;
+            }
+            &>div.rights{
+                float: right;
+            }
+            &>div.img{
+                &>img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &>div.text{
+                padding-top: 15%;
+                &>h1{
+                    display: block;
+                    font-size: 50px;
+                }
+                &>p{
+                    margin: 40px 0;
+                    font-size: 14px;
+                    line-height: 30px;
+                }
+                &>button{
+                    border: 4px solid rgba(0,0,0,.1);
+                    outline: none;
+                    text-align: center;
+                    width: 110px;
+                    height: 50px;
+                    font-weight: 800;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: all .2s ease;
+                    &:hover{
+                        border: 4px solid rgba(0,0,0,0);
+                        background: rgba(0,0,0,.1);
+                    }
+                }
+                &>button.whites{
+                    color: white;
+                }
+                &>button.blacks{
+                    color: black;
+                }
+            }
+        }
+        &.Outer.ContactUs{
+            background: black;
+            &>div.Publics>div.contact{
+                width: 1200px;
+                padding: 0 40px;
+                margin: 172px auto 0 auto;
+                &>ul{
+                    width: 100%;
+                    height: 68px;
+                    text-align: center;
+                    &>div{
+                        display: inline-block;
+                        margin: 0 auto;
+                        width: auto;
+                        height: auto;
+                        &>li{
+                            float: left;
+                            width: 60px;
+                            height: 60px;
+                            margin:0px 25px;
+                            text-align: center;
+                            line-height: 64px;
+                            border-radius: 50%;
+                            border: 2px solid white;
+                        }
+                    }
+                }
+                &>div.contacts{
+                    width: 100%;
+                    height: 90px;
+                    padding-top: 60px;
+                    &>span{
+                        display: block;
+                        text-align: center;
+                        width: 100%;
+                        height: 30px;
+                        line-height: 30px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    }
+}

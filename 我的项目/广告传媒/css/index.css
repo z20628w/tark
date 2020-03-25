@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  overflow: hidden;
+}
+div.box {
+  width: 100%;
+  height: auto;
+  background: #f7f7f7;
+  position: relative;
+}
+div.box > div.nav {
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: #f7f7f7;
+}
+div.box > div.nav > div.nav-cont {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+div.box > div.nav > div.nav-cont > div.logo {
+  float: left;
+  width: 160px;
+  height: 50px;
+  padding: 15px 0;
+}
+div.box > div.nav > div.nav-cont > div.logo > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+div.box > div.nav > div.nav-cont > div.menu {
+  float: right;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 15px 0;
+  position: relative;
+  z-index: 1;
+}
+div.box > div.nav > div.nav-cont > div.menu::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 18px auto 0 auto;
+  transition: all 0.3s ease;
+  transform-origin: right bottom;
+}
+div.box > div.nav > div.nav-cont > div.menu::after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  display: block;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 10px auto 0 auto;
+  transition: all 0.3s ease;
+  transform-origin: right top;
+}
+div.box > div.nav > div.nav-cont > div.menu:hover:before {
+  background: #ffffff;
+  transform: rotate(-35deg);
+}
+div.box > div.nav > div.nav-cont > div.menu:hover:after {
+  background: #ffffff;
+  transform: rotate(35deg);
+}
+div.box > div.nav > div.nav-cont > div.menu.click:before {
+  background: #ffffff;
+  transform: rotate(-35deg);
+}
+div.box > div.nav > div.nav-cont > div.menu.click:after {
+  background: #ffffff;
+  transform: rotate(35deg);
+}
+div.box > div.nav > div.nav-cont > div.menus {
+  position: fixed;
+  right: -400px;
+  top: 0px;
+  width: 400px;
+  height: 100%;
+  background: white;
+}
+div.box > div.nav > div.nav-cont > div.menus > ul {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+}
+div.box > div.nav > div.nav-cont > div.menus > ul > li {
+  width: 100%;
+  height: 50px;
+  padding: 0 50px 0 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+div.box > div.nav > div.nav-cont > div.menus > ul > li > a {
+  display: inline-block;
+  height: 100%;
+  line-height: 50px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 900;
+  cursor: pointer;
+}
+div.box > div.nav > div.nav-cont > div.menus > ul > li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+div.box > div.Track {
+  width: 20px;
+  height: auto;
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  margin-top: -82px;
+  overflow: hidden;
+}
+div.box > div.Track > ul {
+  padding: 0 5px;
+  height: auto;
+}
+div.box > div.Track > ul > li {
+  display: block;
+  float: left;
+  width: 4px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 15px auto;
+  border: 1px solid white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+div.box > div.Track > ul > li:hover {
+  background: white;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+div.box > div.Track > ul > li.style {
+  background: white;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+div.box > div.content {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  z-index: -1;
+}
+div.box > div.content > div.Outer {
+  width: 100%;
+}
+div.box > div.content > div.Outer > div.Publics {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 100px;
+}
+div.box > div.content > div.Outer > div.Publics > div.cont {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+div.box > div.content > div.Outer > div.Publics > div.lefts {
+  float: left;
+}
+div.box > div.content > div.Outer > div.Publics > div.rights {
+  float: right;
+}
+div.box > div.content > div.Outer > div.Publics > div.img > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+div.box > div.content > div.Outer > div.Publics > div.text {
+  padding-top: 15%;
+}
+div.box > div.content > div.Outer > div.Publics > div.text > h1 {
+  display: block;
+  font-size: 50px;
+}
+div.box > div.content > div.Outer > div.Publics > div.text > p {
+  margin: 40px 0;
+  font-size: 14px;
+  line-height: 30px;
+}
+div.box > div.content > div.Outer > div.Publics > div.text > button {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  text-align: center;
+  width: 110px;
+  height: 50px;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+div.box > div.content > div.Outer > div.Publics > div.text > button:hover {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.1);
+}
+div.box > div.content > div.Outer > div.Publics > div.text > button.whites {
+  color: white;
+}
+div.box > div.content > div.Outer > div.Publics > div.text > button.blacks {
+  color: black;
+}
+div.box > div.content > div.Outer.Outer.ContactUs {
+  background: black;
+}
+div.box > div.content > div.Outer.Outer.ContactUs > div.Publics > div.contact {
+  width: 1200px;
+  padding: 0 40px;
+  margin: 172px auto 0 auto;
+}
+div.box > div.content > div.Outer.Outer.ContactUs > div.Publics > div.contact > ul {
+  width: 100%;
+  height: 68px;
+  text-align: center;
+}
+div.box > div.content > div.Outer.Outer.ContactUs > div.Publics > div.contact > ul > div {
+  display: inline-block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+}
+div.box > div.content > div.Outer.Outer.ContactUs > div.Publics > div.contact > ul > div > li {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 0px 25px;
+  text-align: center;
+  line-height: 64px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+div.box > div.content > div.Outer.Outer.ContactUs > div.Publics > div.contact > div.contacts {
+  width: 100%;
+  height: 90px;
+  padding-top: 60px;
+}
+div.box > div.content > div.Outer.Outer.ContactUs > div.Publics > div.contact > div.contacts > span {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+}

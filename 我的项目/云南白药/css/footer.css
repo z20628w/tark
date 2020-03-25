@@ -1,0 +1,29 @@
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+
+/* ------------------尾部内容------------------ */
+footer{width: 100%;height: 470px;background: blue;}
+/* ------------------尾部上部分内容------------------ */
+footer>div.footTop{width: 86%;height: 252px;padding: 60px 7%;background:#3a3a3a;position: relative;}
+
+/* ------------------尾部上部分文字内容------------------ */
+footer>div.footTop>.footTLeft{width: 80%;height: 100%;background:#3a3a3a;float: left;}
+footer>div.footTop>.footTLeft>dl{margin-right:131px;float: left;}
+footer>div.footTop>.footTLeft>dl>dt{margin-bottom: 15px;color: white;font-size: 18px;cursor: pointer;}
+footer>div.footTop>.footTLeft>dl>dd{color: #888;font-size: 14px;height: 30px;line-height: 30px;cursor: pointer;}
+footer>div.footTop>.footTLeft>dl>dd:hover{color: white;}
+/* ------------------尾部上部分联系方式------------------ */
+footer>div.footTop>.footTright{width: 382px;height: 100%;background:#323232;float:right;position: absolute;top: 0;right: 0;}
+footer>div.footTop>.footTright>.Hotline{padding: 60px 0 0 60px;width: 322px;height: 220px;}
+footer>div.footTop>.footTright>.Hotline>div{width: 100%;height: 155px;}
+footer>div.footTop>.footTright>.Hotline>p{color: #888;}
+footer>div.footTop>.footTright>.Hotline>img{margin:10px 0;height: 26px;}
+footer>div.footTop>.footTright>.Hotline>div>span{display: block;float: left;width: 40%;height: 100%;text-align: center;color:#888;}
+footer>div.footTop>.footTright>.Hotline>div>span>p{width: 115px;height: 115px;padding: 5px;}
+footer>div.footTop>.footTright>.Hotline>div>span>p>img{width: 100%;height: 100%;}
+/* ------------------尾部下部分内容------------------ */
+footer>div.footBottom{width: 100%;height:60px;background:#262626;padding: 20px 0;}
+footer>div.footBottom>p{text-align: center;color: #888;font-size: 12px;height:20px;}
+footer>div.footBottom>p>dt{display:inline-block;width: 70px;}

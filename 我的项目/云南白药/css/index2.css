@@ -1,0 +1,262 @@
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+.box{width: 100%;}
+
+/* ban图片 */
+div.ban{width: 100%;height: 500px;overflow: hidden;}
+div.ban>img{width:100%;height:500px;}
+/* 空白盒子 */
+.Blank1{width: 100%;height: 70px;}
+.Blank2{width: 100%;height: 50px;}
+.Blank3{width: 100%;height: 65px;}
+.Blank4{width: 100%;height: 30px;}
+/* 简介 */
+div.briefIntroduction{width: 100%;height: 632px;}
+
+/* 公司名 */
+div.briefIntroduction>div.CompanyName{width: 100%;height: 70px;position: relative;}
+/* 两边两条线 */
+div.CompanyName>span{display: block;width: 540px;height: 1px;background:#ccc;margin-top: 20px;}
+div.CompanyName>span.Name-left{float: left;}
+div.CompanyName>span.Name-right{float:right;}
+/* 公司名称 */
+div.CompanyName>div.Name{width: 420px;height: 100%;background:white;position: absolute;top: 0;left: 50%;margin-left: -210px;}
+div.CompanyName>div.Name>span{display: block;width:100%;height:40px;font-size: 30px;color: #333;text-align: center;line-height: 40px;}
+div.CompanyName>div.Name>div{width:100%;height: 20px;color: #bbb;font-size:14px;text-align: center;margin-top: 5px;}
+
+/* 公司详情 */
+div.details{width:900px;height: 90px;padding: 0 150px;color: #888;margin: 0 auto;line-height: 30px;text-indent: 2em;font-size: 14px;}
+div.details>a{color: #57c282;}
+div.details>a:hover{text-decoration:underline}
+
+/* 公司三段历史进程 */
+div.Process{width: 720px;height: 235px;background:url(../html/imgs/关于白药img/aboutBg1.jpg) no-repeat bottom;margin:0 auto;padding: 0 240px;position: relative;}
+div.Process>div{float: left;width: 240px;height:75px;text-align: center;}
+div.Process>div>dl{display: block;width: 100%;height: 55px;color:#57c282 ;font-size: 48px;text-align: center;line-height: 55px;font-weight: 900;}
+div.Process>div>dd{color: #888;font-size: 14px;height: 20px;width: 100%;text-align: center;line-height: 20px;}
+
+/* 更多(三点) */
+div.Process>ul{width: 41px;height: 41px;background: url(../html/imgs/关于白药img/more.png) no-repeat center;position: absolute;left: 50%;bottom: 10px;margin-left: -20.5px;}
+div.Process>ul:hover{background: url(../html/imgs/关于白药img/more_h1.png) no-repeat center;}
+
+/* 历史轮播图1 */
+div.HistoricalCarousel{width: 100%;height: 745px;position: relative;}
+
+/* 发展历程题目 */
+div.Historical{width: 100%;height: 630px;background:url(../html/imgs/关于白药img/aboutBg2.jpg) no-repeat center/100% 100%;}
+/* 发展历程 */
+div.Historical>div.developmentHistory{width: 100%;height: 70px;position: relative;}
+/* 两边两条线 */
+div.developmentHistory>span{display: block;width: 650px;height: 1px;background:#ccc;margin-top: 20px;opacity: .2;}
+div.developmentHistory>span.Name-left{float: left;}
+div.developmentHistory>span.Name-right{float:right;}
+/* 发展历程文字 */
+div.developmentHistory>div.Name{width: 420px;height: 100%;position: absolute;top: 0;left: 50%;margin-left: -210px;}
+div.developmentHistory>div.Name>span{display: block;width:100%;height:40px;font-size: 30px;color:white;text-align: center;line-height: 40px;}
+div.developmentHistory>div.Name>div{width:100%;height: 20px;color: #bbb;font-size:14px;text-align: center;margin-top: 5px;}
+
+/* 总轮播图 */
+div.Carousel{width: 1200px;height: 485px;position: absolute;top: 260px;left: 50%;margin-left: -600px;}
+/* 历史线轮播图 */
+div.Carousel>div.HistoryLine{width:1000px;height: 120px;padding: 0 100px;margin:0 auto;position:relative}
+
+
+/* 贯穿线 */
+div.HistoryLine>div.Line{width: 1519.2px;height: 1px;background:rgba(255,255,255,.2);position: absolute;top:59.5px;left: -160px;}
+div.HistoryLine>div.Line>i{display: block;width: 349px;height: 1px;background:#57c282 ;}
+
+/* 左右两边圆按钮 */
+div.HistoryLine>div.but{width: 40px;height: 40px;border-radius: 20px;position: absolute;top: 40px;transition: all .5s ease;}
+div.HistoryLine>div.but-Left{left: 60px;background:#e6e6e6 url('../html/imgs/关于白药img/btPrev.png') no-repeat center;}
+div.HistoryLine>div.but-Right{right: 60px;background:#e6e6e6 url('../html/imgs/关于白药img/btNext.png') no-repeat center;}
+/* 鼠标移入变化 */
+div.HistoryLine>div.but-Left:hover{background:#57c282 url('../html/imgs/关于白药img/btPrev_h.png') no-repeat center;}
+div.HistoryLine>div.but-Right:hover{right: 60px;background:#57c282 url('../html/imgs/关于白药img/btNext_h.png') no-repeat center;}
+
+
+/* 历史节点圆 */
+div.HistoryLine>div.HistoricalNode{width: 100%;height: 100%;overflow: hidden;position: relative;}
+div.HistoryLine>div.HistoricalNode>ul{width:1815px;height:84px;position: absolute;top: 0px;left: 0px;}
+div.HistoryLine>div.HistoricalNode>ul>li{width: 165px;height: 100%;float: left;text-align: center;}
+div.HistoryLine>div.HistoricalNode>ul>li>p{text-align: center;font-size: 20px;margin-bottom: 10px;width: 100%;height: 30px;color: white;transition: all .5s ease;}
+div.HistoryLine>div.HistoricalNode>ul>li>div{width:14px;height: 14px;border-radius: 14px;background: white;margin: 23px auto;display:block;}
+/* 控制历史节点圆显示隐藏 */
+div.HistoryLine>div.HistoricalNode>ul>li>p.Big{color: #dfc22a;font-size: 24px;font-weight: 900;}
+div.HistoryLine>div.HistoricalNode>ul>li>div.Round1{display: none;}
+
+/* 三层圆 */
+div.HistoryLine>div.HistoricalNode>ul>li>span{width:40px;height: 40px;border-radius: 20px;border: 1px solid #57c282;margin: -2px auto;overflow: hidden;transform: scale(0);display: block;}
+div.HistoryLine>div.HistoricalNode>ul>li>span>i{display: block;width: 26px;height: 26px;border-radius: 20px;border: 1px solid #57c282;margin: 6.5px auto;overflow: hidden;display: block;}
+div.HistoryLine>div.HistoricalNode>ul>li>span>i>b{width:14px;height: 14px;border-radius: 14px;background: #57c282;margin: 6px auto;display: block;}
+/* 控制三层圆显示隐藏 */
+div.HistoryLine>div.HistoricalNode>ul>li>span.ThreeLayers{transition: all .5s ease;transform: scale(1);}
+
+
+/* 历史事件轮播图 */
+div.HistoricalEvent{width: 970px;height: 230px;padding: 30px;background: white;margin: 0 auto;position: relative;box-shadow: 0 0 5px 1px #ccc;}
+/* 中间小三角 */
+div.HistoricalEvent>.Triangle{width: 30px;height: 16px;background: url(../html/imgs/关于白药img/Triangle.png) no-repeat center;position: absolute;top: -16px;left: 80px;}
+
+/* 事件内容 */
+div.HistoricalEvent>.EventContentBig{width: 100%;height: 100%;position: relative;overflow: hidden;}
+div.HistoricalEvent>.EventContentBig>ul.EventContent{width: 1100%;height: 100%;position: absolute;top: 0px;left: 0px;}
+div.HistoricalEvent>.EventContentBig>ul.EventContent>li{width:970px;height: 100%;float: left;}
+/* 左边图片 */
+div.HistoricalEvent>.EventContentBig>ul.EventContent>li>a{display: block;width: 375px;height: 230px;float: left;}
+div.HistoricalEvent>.EventContentBig>ul.EventContent>li>a>img{width: 100%;height: 100%;}
+/* 右边内容 */
+div.HistoricalEvent>.EventContentBig>ul.EventContent>li>div{width: 535px;height: 225px;float: right;}
+/* 内容日期及按钮 */
+div.HistoricalEvent>.EventContentBig>ul.EventContent>li>div>span{display: block;width: 100%;height:40px}
+/* 左边日期 */
+div.HistoricalEvent>.EventContentBig>ul.EventContent>li>div>span>div.Date{color: #666;line-height: 40px;height: 40px;overflow: hidden;float: left;}
+ul.EventContent>li>div>span>div>f{display: block;float: left;margin-top: 5px;}
+ul.EventContent>li>div>span>div>span{display: block;float: left;font-size: 30px;padding-right: 10px;color:#57c282;height: 40px;}
+/* 右边全部按钮 */
+div.but2{width:111px;height:40px;float: right;position: absolute;top: 30px;right: 30px;}
+div.but2>div{width:27px;height:27px;background:#e6e6e6;margin-left: 10px;float: left;margin-top: 6.5px;border-radius: 5px;transition: all .5s ease;}
+div.but2>div.butLeft{background:#e6e6e6 url('../html/imgs/关于白药img/btPrev.png') no-repeat center;}
+div.but2>div.butRight{background:#e6e6e6 url('../html/imgs/关于白药img/btNext.png') no-repeat center;}
+div.but2>div.jia{background:#e6e6e6 url('../html/imgs/关于白药img/add1.png') no-repeat center;}
+/* 右边按钮鼠标移入事件 */
+div.but2>div.butLeft:hover{background:#57c282 url('../html/imgs/关于白药img/btPrev_h.png') no-repeat center;}
+div.but2>div.butRight:hover{background:#57c282 url('../html/imgs/关于白药img/btNext_h.png') no-repeat center;}
+div.but2>div.jia:hover{background:#57c282 url('../html/imgs/关于白药img/add1_h.png') no-repeat center;}
+/* 内容 */
+ul.EventContent>li>div>p{width:515px;height:175px;padding-right: 25px;margin-top: 10px;color: #888;font-size: 14px;overflow: auto;text-indent: 2em;line-height:29px;}
+ul.EventContent>li>div>p>a{color: #009900;font-size: 18px;font-weight: 900;}
+
+
+/* 第二个轮播图 (快捷入口) */
+.QuickEntry{width: 100%;height: 627px;padding-top: 50px;background:url(../html/imgs/关于白药img/BG.png) no-repeat left bottom;}
+
+/* 快捷入口文字外框 */
+div.QuickEntryName{width: 100%;height: 70px;position: relative;}
+/* 两边两条线 */
+div.QuickEntryName>span{display: block;width: 670px;height: 1px;background:#ccc;margin-top: 20px;opacity: .8;}
+div.QuickEntryName>span.Name-left{float: left;}
+div.QuickEntryName>span.Name-right{float:right;}
+/* 快捷入口文字 */
+div.QuickEntryName>div.Name{width: 420px;height: 100%;position: absolute;top: 0;left: 50%;margin-left: -210px;}
+div.QuickEntryName>div.Name>span{display: block;width:100%;height:40px;font-size: 30px;color:black;text-align: center;line-height: 40px;}
+div.QuickEntryName>div.Name>div{width:100%;height: 20px;color: #bbb;font-size:14px;text-align: center;margin-top: 5px;}
+
+/* 快捷入口轮播图 */
+.QuickEntryLbt{width: 1000px;height: 418px;margin: 0 auto;padding: 0 100px;position: relative;}
+
+/* 左右按钮 */
+.QuickEntryLbt>div.but3{width: 25px;height: 50px;border-radius: 5px;position: absolute;top: 50%;margin-top: -25px;transition: all .5s ease;}
+.QuickEntryBut-left{background:#eee url(../html/imgs/关于白药img/btPrev.png) no-repeat center;left: 0;}
+.QuickEntryBut-right{background:#eee url(../html/imgs/关于白药img/btNext.png) no-repeat center;right: 0;}
+/* 左右按钮鼠标移入事件 */
+.QuickEntryBut-left:hover{background:#57c282 url(../html/imgs/关于白药img/btPrev_h.png) no-repeat center;}
+.QuickEntryBut-right:hover{background:#57c282 url(../html/imgs/关于白药img/btNext_h.png) no-repeat center;}
+
+/* 轮播图图片 */
+div.QuickEntryLbt>div.QuickEntryLbtContent{width: 1000px;height: 418px;overflow: hidden;}
+.QuickEntryImg{width:1468px;height: 418px;position: relative;}
+.QuickEntryImg>li{width:340px;height: 95%;position:absolute;top:0px;}
+/* 旋转边框 */
+.QuickEntryImg>li>div{width: 145px;height: 145px;background: url(../html/imgs/关于白药img/aboutCircle.png) no-repeat center;position: absolute;top:50px;left:50%;margin-left: -72.5px;/* -webkit-transform:rotate(360deg); */ }
+/* 轮播图图片 */
+.QuickEntryImg>li>span{width: 145px;height: 145px;display: block;margin: 50px auto 0 auto;}
+/* 名字 */
+.QuickEntryImg>li>p{width: 100%;height: 24px;color: #666;font-size: 18px;text-align: center;line-height: 24px;}
+
+
+/* 小圆点 */
+.QuickEntryLbt>ul.SmallDot{width: 64px;height: 8px;position: absolute;left: 50%;bottom: -50px;margin-left: -32px;}
+.QuickEntryLbt>ul.SmallDot>li{width: 8px;height: 8px;float: left;margin: 0 4px;border-radius: 4px;background: #ccc;}
+.QuickEntryLbt>ul.SmallDot>li.style2{background: #57c282;}
+.QuickEntryLbt>ul.SmallDot>li:hover{background: #57c282;}
+
+
+/* 第三个轮播图 (大事记) */
+.memorabilia{width: 100%;height:auto;background: url(../html/imgs/关于白药img/fixedbg.jpg) no-repeat center fixed;}
+/* 大事记文字外框 */
+div.memorabiliaName{width: 100%;height: 70px;position: relative;overflow: hidden;}
+/* 两边两条线 */
+div.memorabiliaName>span{display: block;width: 670px;height: 1px;background:#ccc;margin-top: 20px;opacity: .8;}
+div.memorabiliaName>span.Name-left{float: left;}
+div.memorabiliaName>span.Name-right{float:right;}
+/* 大事记文字 */
+div.memorabiliaName>div.Name{width: 420px;height: 100%;position: absolute;top: 0;left: 50%;margin-left: -210px;}
+div.memorabiliaName>div.Name>span{display: block;width:100%;height:40px;font-size: 30px;color:white;text-align: center;line-height: 40px;}
+div.memorabiliaName>div.Name>div{width:100%;height: 20px;color: #bbb;font-size:14px;text-align: center;margin-top: 5px;}
+
+
+/* 第三个轮播图本体 */
+.ThirdCarousel{width: 1000px;height:auto;margin: 0 auto;overflow: hidden;}
+/* 第三轮播图的头部轮播图 */
+.HeadCarousel{width: 450px;height: 50px;margin: 0 auto;position: relative;}
+.HeadCarousel>.HeadCarousel2{width: 100%;height: 100%;overflow: hidden;position: relative;}
+.HeadCarousel>.HeadCarousel2>ul{width: 767%;height: 100%;margin-left: 150px;text-align: center;line-height: 50px;color: white;position: absolute;top: 0;left: 0;}
+.HeadCarousel>.HeadCarousel2>ul>li{width: 150px;height: 50px;float: left;cursor: pointer;transition: all .5s ease;}
+.HeadCarousel>.HeadCarousel2>ul>li.styels{color:#fdc22a;font-size: 30px;font-weight: 900;}
+
+/* 左右按钮 */
+.HeadCarousel>div.but4{position: absolute;top: 0px;cursor: pointer;}
+.HeadCarouselButLeft{width: 50px;height: 50px;background: url(../html/imgs/关于白药img/btPrev_h.png) no-repeat center;left:-50px;}
+.HeadCarouselButRight{width: 50px;height: 50px;background: url(../html/imgs/关于白药img/btNext_h.png) no-repeat center;right:-50px;}
+
+/* 轮播图身体部分 */
+.WheelMap{width: 2300%;height:1194px;overflow: hidden;position: relative;transition: all .3s ease;}
+.WheelMap>.WheelMap2{width: 100%;height: 100%;position: absolute;top: 0px;left: 0px;}
+.Below{width: 1000px;height:auto;position: relative;float: left;transition: all .5s ease;}
+
+/* 时间图标 */
+.Below>.time1{width: 100%;height: 45px;background: url(../html/imgs/关于白药img/time.png) no-repeat center top;position: relative;}
+.Below>.time1>em{width: 1px;height:20px;display: block;background: #999;position: absolute;top: 25px;left: 50%;}
+
+/* 	<!-- 事件时间与内容 --> */
+.Below>.timeContent{width: 100%;height: 323px;padding: 30px 0;position: relative;}
+.Below>.timeContent>.time2{width: 100%;height: 50px;color: #57C282;text-align: left;font-size: 20px;border-bottom: 1px solid rgba(153,153,153,.6);}
+.Below>.timeContent>.time21{width: 100%;height: 50px;color: #57C282;text-align:left;font-size: 20px;border-bottom: 1px solid rgba(153,153,153,.6);}
+.Below>.timeContent>div.em{width: 11px;height: 11px;border-radius: 11px;background: #57C282;border: 2px solid white;position: absolute;left: 50%;top:73px;margin-left: -7.5px;z-index: 10;}
+
+.Below>.timeContent>.contentImg{width:50%;height: 242px;float: left;}
+.Below>.timeContent>.contentImg>img{width: 445px;margin: 0 auto;display: block;}
+
+.Below>.timeContent>.contentText{width:50%;height: 242px;float: right;}
+.Below>.timeContent>.contentText>p{width: 400px;height: 240px;font-size: 14px;color: white;line-height:25px;padding-left: 45px;}
+/* 贯穿的竖线 */
+.Below>div>em{width: 1px;height: 100%;background: #999;position: absolute;top: 0;left: 50%;}
+/* 最后的虚线 */
+.xuxian{width: 1px;height: 30px;background: url(../html/imgs/关于白药img/xuxian.png) no-repeat center;position: absolute;left: 50%;bottom: -24px;}
+
+/* 	<!-- 事件时间与内容 (反方向)--> */
+.Below>.timeContent2{width: 100%;height: 323px;padding: 30px 0;position: relative;}
+.Below>.timeContent2>.time2{width: 100%;height: 50px;color: #57C282;text-align:right;font-size: 20px;border-bottom: 1px solid rgba(153,153,153,.6);}
+.Below>.timeContent2>.time21{width: 100%;height: 50px;color: #57C282;text-align:right;font-size: 20px;border-bottom: 1px solid rgba(153,153,153,.6);}
+
+.Below>.timeContent2>div.em{width: 11px;height: 11px;border-radius: 11px;background: #57C282;border: 2px solid white;position: absolute;left: 50%;top:73px;margin-left: -7.5px;z-index: 10;}
+
+.Below>.timeContent2>.contentImg{width:50%;height: 242px;float: right;}
+.Below>.timeContent2>.contentImg>img{width: 445px;margin: 0 auto;display: block;}
+
+.Below>.timeContent2>.contentText{width:50%;height: 242px;float: left;}
+.Below>.timeContent2>.contentText>p{width: 400px;height: 240px;font-size: 14px;color: white;line-height:25px;padding-right: 45px;}
+
+/* 更多按钮 */
+
+.more{width: 41px;height: 41px;border-radius: 41px;background: url(../html/imgs/关于白药img/more.png) no-repeat center;margin: 30px auto 100px auto;}
+.more:hover{background: url(../html/imgs/关于白药img/more_h1.png) no-repeat center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
