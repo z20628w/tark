@@ -1,1 +1,0 @@
-document.write('<span><a href="http://www.51mkf.com/member/index.php?act=login&op=index">登录</a></span> <span><a href="http://www.51mkf.com/member/index.php?act=login&op=register">免费注册</a></span>')

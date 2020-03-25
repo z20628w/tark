@@ -1,1 +1,0 @@
-document.write('  <span class="userimg"><img src="http://www.51mkf.com/data/upload/shop/common/default_user_portrait.gif"></span><span class="welcome">Hi~欢迎来到迈客风！</span><span class="userlink"><a href="http://www.51mkf.com/member/index.php?act=login&op=index">登录</a><a href="http://www.51mkf.com/member/index.php?act=login&op=register">注册</a></span>')
